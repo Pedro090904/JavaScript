@@ -20,7 +20,7 @@ if (media < 5){
     console.log(`Com a média de ${media.toFixed(2)} você está reprovado!`);
 }
 
-if(media >= 5 && media < 7){
+if(media >= 5 && media <= 7){
 console.log(`Com a média de ${media.toFixed(2)} você está de recuperação!`);
 }
 
