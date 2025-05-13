@@ -15,10 +15,11 @@
  - Acima de 40, Obesidade grave;
 */
 
-const peso = 62;
-const altura = 1.76; 
+const peso = 70;
+const altura = 1.70; 
 
-const IMC = (peso/(altura * altura));
+const IMC = (peso / Math.pow(altura, 2));
+
 
 if (IMC < 18.5){
     console.log(`Com o IMC de ${IMC.toFixed(2)}, você está abaixo do peso`);
