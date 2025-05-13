@@ -15,3 +15,27 @@
  - Acima de 40, Obesidade grave;
 */
 
+const peso = 62;
+const altura = 1.76; 
+
+const IMC = (peso/(altura * altura));
+
+if (IMC < 18.5){
+    console.log(`Com o IMC de ${IMC.toFixed(2)}, você está abaixo do peso`);
+}
+
+if(IMC >= 18.5 && IMC < 25){
+    console.log(`Com o IMC de ${IMC.toFixed(2)}, você está com o peso normal`);
+}
+
+if(IMC >= 25 && IMC < 30){
+     console.log(`Com o IMC de ${IMC.toFixed(2)}, você está acima do peso`);
+}
+
+if(IMC >= 30 && IMC < 40){
+     console.log(`Com o IMC de ${IMC.toFixed(2)}, você está Obeso`);
+}
+
+if(IMC > 40){
+     console.log(`Com o IMC de ${IMC.toFixed(2)}, você está em Obesidade Grave`);
+}
