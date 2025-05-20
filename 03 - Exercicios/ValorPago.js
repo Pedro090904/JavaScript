@@ -12,25 +12,21 @@ Código Condição de pagamento:
 */
 
 const preco = 100; 
-const Debito = preco - (preco * 0.10);
-const Dinheiro = preco - (preco * 0.15);
-const Pix = preco - (preco * 0.15);
-const Credito = preco + (preco * 0.10);
-
-const parcela = (Credito/2);
-
-const tipoPagamento = Credito;
+const tipoPagamento = 3;
 
 
-if(tipoPagamento === Debito){
-    console.log(`O preço será: ${Debito}`);
+if(tipoPagamento === 1){
+    console.log(`O preço será: ${preco - (preco * 0.10)}`);
 }
-else if(tipoPagamento === Dinheiro || tipoPagamento === Pix){
-    console.log(`O preço no dinheiro ou pix será: ${Dinheiro}`);
+else if(tipoPagamento === 2){
+    console.log(`O preço no dinheiro ou pix será: ${preco - (preco * 0.15)}`);
 }
-
-else if(tipoPagamento === Credito){
+else if(tipoPagamento ===3){
+    console.log(`O valor em duas vezes será de ${preco}$, com cada parcela por ${preco/2}$`)
+}
+else{
     console.log(`O preço dividido em duas será: ${Credito}`);
     console.log(`e suas parcelas serao de ${parcela}`);
 }
+
 
