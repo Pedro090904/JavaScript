@@ -29,4 +29,3 @@ else{
     console.log(`e suas parcelas serao de ${parcela}`);
 }
 
-
