@@ -12,7 +12,7 @@ Código Condição de pagamento:
 */
 
 const preco = 100; 
-const tipoPagamento = 3;
+const tipoPagamento = 4;
 
 
 if(tipoPagamento === 1){
@@ -25,7 +25,6 @@ else if(tipoPagamento ===3){
     console.log(`O valor em duas vezes será de ${preco}$, com cada parcela por ${preco/2}$`)
 }
 else{
-    console.log(`O preço dividido em duas será: ${Credito}`);
-    console.log(`e suas parcelas serao de ${parcela}`);
+    console.log(`O preço dividido em duas será: ${preco +(preco*0.1)}`);
 }
 
