@@ -16,7 +16,9 @@ escreverNome('Pedro de Sousa Mesquita');
 verificaIdade(21);
 escreverNome('joão neto');
 verificaIdade(10);
-
+frase('Estou testando minha nova funcao de texto redigido');
+testeNome('julia');
+testeIdade(33);
 
 function testeNome(Nome){
     return `Meu nome é ${Nome}`;
@@ -28,4 +30,9 @@ function testeIdade(Idade){
     }
 }
 
+
+
+function frase(texto){
+   console.log( `Seu texto foi: ${texto}`);
+}
 
